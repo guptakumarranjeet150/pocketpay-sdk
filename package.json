@@ -1,7 +1,7 @@
 {
   "name": "stellar-pocketpay-sdk",
   "version": "1.0.0",
-  "description": "Reusable TypeScript SDK for Stellar PocketPay — wallet management, XLM payments, transaction history, and Soroban vault interactions on Stellar Testnet.",
+  "description": "Reusable TypeScript SDK for Stellar PocketPay \u2014 wallet management, XLM payments, transaction history, and Soroban vault interactions on Stellar Testnet.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -15,8 +15,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsx watch src/index.ts",
+    "build": "node init && tsc",
+    "dev": "node init && tsx watch src/index.ts",
     "example:wallet": "tsx examples/create-wallet.ts",
     "test": "vitest run",
     "test:unit": "vitest run",
@@ -57,14 +57,15 @@
   "homepage": "https://github.com/Stellar-PocketPay/stellar-pocketpay-sdk#readme",
   "dependencies": {
     "@stellar/stellar-sdk": "^13.1.0",
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^22.15.17",
     "@vitest/coverage-v8": "^3.1.4",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
-    "vitest": "^3.1.4"
+    "vitest": "^3.2.7"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -15,8 +15,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "node init && tsc",
-    "dev": "node init && tsx watch src/index.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
     "example:wallet": "tsx examples/create-wallet.ts",
     "test": "vitest run",
     "test:unit": "vitest run",
